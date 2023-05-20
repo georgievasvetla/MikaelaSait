@@ -1,0 +1,247 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing:border-box;
+}
+.header {
+    width: 100%;
+    height:100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(animeee.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 300px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 20px;
+        display: block;
+    }
+
+    .navbar ul li::after {
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+    }
+
+    .navbar ul li:hover:after {
+        width: 100%;
+    }
+
+    .navbar ul li ul {
+        display: none;
+        position: absolute;
+    }
+
+    .navbar ul li:hover ul {
+        display: block;
+    }
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+.carousel {
+    width: 50%;
+    margin: auto;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+}
+.animeta {
+    width: 100%;
+    text-align: center;
+}
+    .animeta .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+        .animeta .box-container .box {
+            flex:1 1 30rem;
+            height: 40rem;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 2rem;
+            margin: 2rem;
+            border-radius: .5rem;
+            position: relative;
+        }
+
+            .animeta .box-container .box img {
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .animeta .box-container .box .info {
+                position: absolute;
+                bottom: 2rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 2rem;
+                border-radius: .5rem;
+            }
+.filmi {
+    width: 100%;
+    text-align: center;
+}
+
+    .filmi .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+        .filmi .box-container .box {
+            flex: 1 1 30rem;
+            height: 40rem;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 2rem;
+            margin: 2rem;
+            border-radius: .5rem;
+            position: relative;
+        }
+
+            .filmi .box-container .box img {
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .filmi .box-container .box .info {
+                position: absolute;
+                bottom: 2rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 2rem;
+                border-radius: .5rem;
+            }
+
+.manga {
+    width: 100%;
+    text-align: center;
+}
+
+    .manga .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+        .manga .box-container .box {
+            flex: 1 1 30rem;
+            height: 40rem;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 2rem;
+            margin: 2rem;
+            border-radius: .5rem;
+            position: relative;
+        }
+
+            .manga .box-container .box img {
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .manga .box-container .box .info {
+                position: absolute;
+                bottom: 2rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                background: rgba(0, 0, 0, 0.5);
+                padding: 2rem;
+                border-radius: .5rem;
+            }
+.about {
+    width: 100%;
+    text-align: center;
+}
+    .about .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+        .about .box .img {
+            flex:1 1 2rem;
+            height: 30rem;
+            text-align: center;
+        }
+          
+        .about .box .content {
+            flex: 1 1 20rem;
+        }
+.footer {
+    text-align: center;
+    background:#001933;
+}
+.footer .share{
+display:flex;
+align-items:center;
+justify-content:center;
+flex-wrap:wrap;
+padding:2rem 0;
+}
+    .footer .share a {
+    font-size:2rem;
+    color:#ccc;
+    padding:2rem;
+    }
+        .footer .share a:hover {
+            color: #eee;
+            text-decoration: none;
+        }
+.scroll-top {
+    position: fixed;
+    bottom: 7.5rem;
+    right: 2rem;
+    z-index: 1000;
+    display: none;
+}
+
+    .scroll-top img {
+        height: 7rem;
+        filter: drop-shadow(0 .3rem .5rem rgba(0,0,0,.2));
+    }
